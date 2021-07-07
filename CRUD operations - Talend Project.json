@@ -1,0 +1,63 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "ed98a257-0e5e-4014-8373-635c4e34dd9d",
+        "name": "JsonPowerDB"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Scenario",
+            "id": "094a1d2c-dbd4-41ad-b5bb-729cad0ea0bc",
+            "name": "CRUD"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90935907|-31948847746611293|90945005\",\n    \"cmd\": \"PUT\",\n    \"dbName\": \"MiniProject\",\n    \"rel\": \"EMP-REL\",\n    \"jsonStr\": {\n        \"name\": \"Ekansh Saxena\",\n        \"email\": \"esaxena9927@gmail.com\",\n    }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "ac6903c8-111f-44a0-a34f-10877d229663",
+                "name": "PUT",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
